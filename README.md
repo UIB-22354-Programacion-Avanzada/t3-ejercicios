@@ -92,9 +92,9 @@ t3-ejercicios/
     └── test/java/es/uib/prgava/tema3/ejercicios/   ← las pruebas
 ```
 
-Hay **11 clases** con ejercicios y **7** ya escritas. Una es `DemoCreadorDeHilos`, un programa
-para ver funcionar el ejercicio 3.1.1 cuando lo hayas resuelto. Otra es `Taller`, con los tres pasos
-de la cadena de montaje del 3.2.5. Las otras cinco son el código de partida de los ejercicios 3.1.2
+Hay **11 clases** con ejercicios y **8** ya escritas. Dos son programas para ver funcionar un
+ejercicio cuando lo hayas resuelto: `DemoCreadorDeHilos`, del 3.1.1, y `DemoCadenaDeMontaje`, del
+3.2.5. Otra es `Taller`, con los tres pasos de la cadena de montaje del 3.2.5. Las otras cinco son el código de partida de los ejercicios 3.1.2
 y 3.1.3: `ControlDeAforo` y `Aforo`, `Mesa`, `MesaIngenua` y
 `DemoCena`. **`Aforo` y `MesaIngenua` están mal a propósito**: la primera tiene una condición de
 carrera y la segunda se puede quedar parada. No las corrijas; tu trabajo es escribir las versiones
@@ -129,6 +129,7 @@ mvn -Dtest=VotacionTest test               # solo una clase
 mvn -q compile                             # solo compilar
 mvn -q compile exec:java -Dexec.mainClass=es.uib.prgava.tema3.ejercicios.DemoCreadorDeHilos
 mvn -q compile exec:java -Dexec.mainClass=es.uib.prgava.tema3.ejercicios.DemoCena
+mvn -q compile exec:java -Dexec.mainClass=es.uib.prgava.tema3.ejercicios.DemoCadenaDeMontaje -Dexec.args="10"
 ```
 
 ## Integridad académica
