@@ -57,7 +57,7 @@ cada método aparece si pasó o falló.
 | 3.2.2 | `EstacionMeteo` | `EstacionMeteoTest` |
 | 3.2.3 | `Votacion` | `VotacionTest` |
 | 3.2.4 | `Imprenta` | `ImprentaTest` |
-| 3.2.5 | `CadenaDeMontaje` | `CadenaDeMontajeTest` |
+| 3.2.5 | `CadenaDeMontaje` | `CadenaDeMontajeTest` y, para la ampliación, `CadenaDeMontajeEquiposTest` |
 | 3.3.1 | `Descargador` | `DescargadorTest` |
 | 3.3.2 | `Replicas` | `ReplicasTest` |
 
@@ -92,9 +92,10 @@ t3-ejercicios/
     └── test/java/es/uib/prgava/tema3/ejercicios/   ← las pruebas
 ```
 
-Hay **11 clases** con ejercicios y **6** ya escritas. Una es `DemoCreadorDeHilos`, un programa
-para ver funcionar el ejercicio 3.1.1 cuando lo hayas resuelto. Las otras cinco son el código de
-partida de los ejercicios 3.1.2 y 3.1.3: `ControlDeAforo` y `Aforo`, `Mesa`, `MesaIngenua` y
+Hay **11 clases** con ejercicios y **7** ya escritas. Una es `DemoCreadorDeHilos`, un programa
+para ver funcionar el ejercicio 3.1.1 cuando lo hayas resuelto. Otra es `Taller`, con los tres pasos
+de la cadena de montaje del 3.2.5. Las otras cinco son el código de partida de los ejercicios 3.1.2
+y 3.1.3: `ControlDeAforo` y `Aforo`, `Mesa`, `MesaIngenua` y
 `DemoCena`. **`Aforo` y `MesaIngenua` están mal a propósito**: la primera tiene una condición de
 carrera y la segunda se puede quedar parada. No las corrijas; tu trabajo es escribir las versiones
 buenas al lado.
@@ -114,6 +115,11 @@ pregunta que aparece en el Examen Parcial.
 
 Los diez ejercicios son independientes y se pueden resolver en cualquier orden, aunque siguen el
 del tema y conviene respetarlo.
+
+El ejercicio 3.2.5 tiene una **ampliación** opcional, con sus propias pruebas en
+`CadenaDeMontajeEquiposTest`. Esa clase de prueba llega marcada con `@Disabled`, así que Maven y el
+IDE la saltan y no cuenta para que la construcción pase en verde. Si haces la ampliación, borra la
+línea del `@Disabled` para comprobarla.
 
 ## Órdenes útiles
 
